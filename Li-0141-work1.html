@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li的个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f4f7fc;
+            color: #333333;
+        }
+        /*顶部头部横幅，可改渐变颜色*/
+        .header-banner {
+            background: linear-gradient(135deg, #4080d8, #63a0f0);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+        .avatar-circle {
+            width: 100px;
+            height: 100px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            margin: 0 auto 12px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:36px;
+            color:#4080d8;
+        }
+        .header-banner h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .slogan {
+            font-size:16px;
+            opacity:0.9;
+        }
+        /*导航栏*/
+        nav {
+            background:#ffffff;
+            box-shadow:0 1px 4px rgba(0,0,0,0.1);
+        }
+        .nav-wrap {
+            max-width:900px;
+            margin:0 auto;
+            display:flex;
+        }
+        nav a {
+            flex:1;
+            text-align:center;
+            padding:14px;
+            text-decoration:none;
+            color:#444;
+            transition:0.2s;
+        }
+        nav a:hover {
+            background:#e8f0fc;
+            color:#4080d8;
+        }
+        /*主体容器*/
+        .container {
+            max-width:900px;
+            margin:30px auto;
+            padding:0 20px;
+        }
+        .card {
+            background:#fff;
+            border-radius:12px;
+            padding:24px;
+            margin-bottom:20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+        }
+        .card h2 {
+            color:#4080d8;
+            margin-bottom:14px;
+            font-size:20px;
+            border-left:4px solid #4080d8;
+            padding-left:10px;
+        }
+        .hobby-tag {
+            display:inline-block;
+            background:#e8f0fc;
+            color:#3068b8;
+            padding:6px 14px;
+            border-radius:20px;
+            margin:6px 4px;
+        }
+        footer {
+            text-align:center;
+            padding:20px;
+            color:#777;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <!--头部区域，可以修改名字、标语、头像文字-->
+    <div class="header-banner">
+        <div class="avatar-circle">李</div>
+        <h1>我的个人主页</h1>
+        <div class="slogan">保持热爱，持续进步</div>
+    </div>
+
+    <!--导航栏-->
+    <nav>
+        <div class="nav-wrap">
+            <a href="#about">关于我</a>
+            <a href="#study">学习</a>
+            <a href="#hobby">爱好</a>
+            <a href="#contact">联系我</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!--关于我模块，这里文字全部可以自定义修改-->
+        <div class="card" id="about">
+            <h2>关于我</h2>
+            <p>你好！我是一名在校大学生。平时做事踏实，愿意不断学习新的知识。对计算机很感兴趣，喜欢钻研代码、逻辑。生活当中待人真诚，注重自我提升。</p>
+        </div>
+
+        <!--学习模块-->
+        <div class="card" id="study">
+            <h2>学习情况</h2>
+            <p>专业：计算机相关专业</p>
+            <p>擅长方向：程序设计、逻辑推理；正在备考四六级。</p>
+            <p>目标：夯实专业基础，不断提升自己综合能力。</p>
+        </div>
+
+        <!--爱好标签，可以增删hobby-tag标签-->
+        <div class="card" id="hobby">
+            <h2>兴趣爱好</h2>
+            <div>
+                <span class="hobby-tag">编程</span>
+                <span class="hobby-tag">阅读</span>
+                <span class="hobby-tag">游戏</span>
+                <span class="hobby-tag">听歌</span>
+                <span class="hobby-tag">运动</span>
+            </div>
+        </div>
+
+        <!--联系我模块-->
+        <div class="card" id="contact">
+            <h2>联系我</h2>
+            <p>邮箱：example@mail.com</p>
+            <p>欢迎交流学习！</p>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Li‑0141‑work1 个人主页
+    </footer>
+</body>
+</html>
